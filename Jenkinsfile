@@ -15,7 +15,7 @@ sh "docker build -t dockerrevision:1.0 ."
 }
 
 stage('Docker login to hub and push the image'){
-sh "docker login -u 'nashipae' -p 'nashnashd81#' "
+sh "docker login -u 'nashipae' -p '####' "
 sh "docker tag dockerrevision:1.0 nashipae/revision:latest"
 sh "docker push nashipae/revision:latest"
 }
